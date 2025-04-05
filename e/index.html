@@ -1,102 +1,147 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('CVLPCL3C77UE85Q6FL0G');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astuces pour un Nettoyage de Maison Parfait</title>
+    <title>Age Confirmation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
             padding: 20px;
         }
-        nav {
+
+        .confirmation-container {
             text-align: center;
-            padding: 10px;
-            background: #e0e0e0;
+            max-width: 400px;
+            width: 100%;
         }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 15px;
+
+        .confirmation-title {
+            color: #cc0000;
+            font-size: 28px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .confirmation-text {
+            color: #000;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.2;
         }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-        .footer {
-            text-align: center;
-            padding: 15px;
-            background: #4CAF50;
+
+        .watch-button {
+            background-color: #e65c00;
             color: white;
-            margin-top: 20px;
+            border: none;
+            padding: 12px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .watch-button:hover {
+            background-color: #cc5200;
         }
     </style>
+    
+    
+    <style>
+        /* Container centralizado e responsivo */
+        .midas-cta-container {
+            max-width: 100%; /* Largura máxima do container */
+            margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+            text-align: center; /* Centraliza o texto e elementos */
+            padding: 20px; /* Espaçamento interno */
+        }
+
+        /* Botão estilizado - Agora em verde */
+        #midas-cta-button {
+            display: inline-block;
+            margin-top: 15px; /* Espaço entre a imagem e o botão */
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #e65c00; /* Cor laranja */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove o sublinhado caso seja um link */
+            font-weight: bold;
+        }
+        
+        /* Botão responsivo ao passar o mouse */
+        #midas-cta-button:hover {
+            background-color: #e65c00; /* Cor verde mais escura ao passar o mouse */
+        }
+    </style>
+    
+    
+    
+    <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+    
+    
+     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          function getAllParams(url) {
+              const urlObj = new URL(url);
+              let paramString = "";
+
+              // Iterando sobre todos os parâmetros da URL
+              for (const [key, value] of urlObj.searchParams) {
+                  paramString += `${paramString ? '&' : ''}${key}=${value}`;
+              }
+
+              return paramString;
+          }
+
+          const params = getAllParams(window.location.href);
+
+          if (params) {
+              const links = document.querySelectorAll("a");
+
+              links.forEach(link => {
+                  const separator = link.href.includes("?") ? "&" : "?";
+                  link.href += `${separator}${params}`;
+              });
+          }
+      });
+    </script>
+    
+    
 </head>
 <body>
-
-    <header>
-        <h1>Astuces pour un Nettoyage de Maison Parfait</h1>
-    </header>
-
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Méthodes</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <div class="container">
-        <h2>1. Commencer par le désencombrement</h2>
-        <p>Avant de nettoyer, débarrassez-vous des objets inutiles. Moins d’encombrement signifie un nettoyage plus efficace.</p>
-
-        <h2>2. Utiliser des produits naturels</h2>
-        <p>Le vinaigre blanc et le bicarbonate de soude sont des alliés puissants pour un nettoyage écologique et efficace.</p>
-
-        <h2>3. Adopter une routine de nettoyage</h2>
-        <p>Nettoyer un peu chaque jour évite l’accumulation de saleté et rend l’entretien plus simple.</p>
-
-        <h2>4. Nettoyer du haut vers le bas</h2>
-        <p>Commencez par les surfaces en hauteur comme les étagères et terminez par le sol pour éviter de salir à nouveau.</p>
-
-        <h2>5. Aérer et parfumer votre intérieur</h2>
-        <p>Ouvrir les fenêtres quotidiennement et utiliser des huiles essentielles apporte une sensation de fraîcheur durable.</p>
+    
+    
+    <div class="confirmation-container">
+        <h1 class="confirmation-title">We Need Confirmation:</h1>
+        <p class="confirmation-text">Click Watch Now If You Have +40!</p>
+        <div class="midas-cta-container"> 
+<a href="https://seusiteaqui.com" id="midas-cta-button" class="midas-cta">
+            WATCH NOW
+        </a>
     </div>
-
-    <div class="footer">
-        <p>&copy; 2025 Blog Maison Propre. Tous droits réservés.</p>
+        
     </div>
-
 </body>
 </html>
